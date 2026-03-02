@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маннапов Улугбек - Профессиональный программист</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <!-- НЕОНОВЫЙ HEADER -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="logo">TC©</div>
+            <div class="nav-center">
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Главная</a></li>
+                    <li><a href="#about" class="nav-link">Обо мне</a></li>
+                    <li><a href="#projects" class="nav-link">Проекты</a></li>
+                    <li><a href="#skills" class="nav-link">Навыки</a></li>
+                </ul>
+            </div>
+            <a href="#contact" class="nav-contact">Контакты</a>
+        </div>
+    </nav>
+
+    <!-- ГЛАВНЫЙ ГЕРОЙ СЕКЦИЯ С ФОТО -->
+    <section class="premium-hero" id="home">
+        <div class="hero-bg">
+            <div class="gradient-sphere gradient-1"></div>
+            <div class="gradient-sphere gradient-2"></div>
+            <div class="gradient-sphere gradient-3"></div>
+            <div class="animated-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="grid-overlay"></div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-loader" id="heroLoader">
+                <div class="loader-circle">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="loader-text">Загрузка</div>
+                <div class="loader-dots">
+                    <div class="loader-dot"></div>
+                    <div class="loader-dot"></div>
+                    <div class="loader-dot"></div>
+                </div>
+            </div>
+
+            <div class="hero-content" id="heroContent" style="opacity: 0;">
+                <div class="hero-main">
+                    <!-- ФОТО С ЭФФЕКТАМИ -->
+                    <div class="photo-wrapper">
+                        <div class="photo-frame">
+                            <div class="photo-glow"></div>
+                            <div class="photo-border">
+                                <img src="img/photo.jpg" alt="Маннапов Улугбек" class="hero-photo">
+                                <div class="photo-overlay"></div>
+                                <div class="photo-shine"></div>
+                            </div>
+                            <div class="particles">
+                                <span class="particle"></span>
+                                <span class="particle"></span>
+                                <span class="particle"></span>
+                                <span class="particle"></span>
+                                <span class="particle"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ТЕКСТ ИНФОРМАЦИЯ -->
+                    <div class="hero-text-content">
+                        <h1 class="hero-title">
+                            <span class="title-word">Маннапов</span>
+                            <span class="title-word">Улугбек</span>
+                        </h1>
+
+                        <p class="hero-subtitle">Профессиональный Программист</p>
+
+                        <p class="hero-bio">
+                            Создаю высокозащищенные веб-приложения, мобильные приложения и автоматизированные решения для вашего бизнеса. Работаю с новейшими технологиями и лучшими практиками в индустрии.
+                        </p>
+
+                        <div class="hero-stats">
+                            <div class="hero-stat">
+                                <div class="stat-value">6+</div>
+                                <div class="stat-label">Лет опыта</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="stat-value">50+</div>
+                                <div class="stat-label">Проектов</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="stat-value">100%</div>
+                                <div class="stat-label">Клиентов доволны</div>
+                            </div>
+                        </div>
+
+                        <div class="hero-cta">
+                            <a href="#contact" class="btn btn-primary btn-lg">
+                                <span>Начать проект</span>
+                                <span class="btn-arrow">→</span>
+                            </a>
+                            <a href="#about" class="btn btn-secondary btn-lg">
+                                <span>Узнать больше</span>
+                            </a>
+                        </div>
+
+                                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ ОБО МНЕ -->
+    <section class="about-premium" id="about">
+        <div class="container">
+            <div class="about-header">
+                <h2 class="section-title">Об мне подробнее</h2>
+                <p class="section-subtitle">Мой путь в технологиях</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">💼</div>
+                    <h3>Профессиональный путь</h3>
+                    <p>Начал свою карьеру в 2018 году с разработки веб-сайтов. За 6 лет прошел путь от начинающего разработчика до senior специалиста, работал над проектами различных масштабов.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Специализация</h3>
+                    <p>Специали��ируюсь на полнофункциональной разработке веб-приложений, создании высоконагруженных систем, интеграции API и разработке telegram ботов для автоматизации.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Методология</h3>
+                    <p>Использую лучшие практики разработки, включая clean code, SOLID принципы, TDD и CI/CD. Каждый проект выполняю с максимальной ответственностью и качеством.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">🌟</div>
+                    <h3>Результаты</h3>
+                    <p>Помог более чем 50 компаниям масштабировать свой бизнес через цифровые решения. Мои проекты получили более 100% положительных отзывов от клиентов.</p>
+                </div>
+            </div>
+
+            <div class="experience-timeline">
+                <h3>Мой путь развития</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2018</div>
+                        <div class="timeline-content">
+                            <h4>Начало карьеры</h4>
+                            <p>Создание первых веб-сайтов на HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2019</div>
+                        <div class="timeline-content">
+                            <h4>Первые проекты</h4>
+                            <p>Разработка сложных веб-приложений, изучение бэкенда</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2020</div>
+                        <div class="timeline-content">
+                            <h4>Специализация</h4>
+                            <p>Углубленное изучение Python, Django, Telegram API</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021-2024</div>
+                        <div class="timeline-content">
+                            <h4>Senior разработчик</h4>
+                            <p>Работа с крупными проектами, лидерство команд</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ ПРОЕКТОВ -->
+    <section class="projects-premium" id="projects">
+        <div class="container">
+            <div class="projects-header">
+                <h2 class="section-title">Мои лучшие проекты</h2>
+                <p class="section-subtitle">Работы которыми я горжусь</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- ПРОЕКТ 1: МУЗЫКАЛЬНЫЙ СТРИМИНГ -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🎵</div>
+                        <h3>MusicHub - Музыкальный стриминг</h3>
+                    </div>
+
+                    <p class="project-description">
+                        Разработал полнофункциональную платформу для потокового воспроизведения музыки с рекомендательной системой на базе AI/ML.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech">React</span>
+                        <span class="tech">Node.js</span>
+                        <span class="tech">MongoDB</span>
+                        <span class="tech">WebSocket</span>
+                    </div>
+
+                    <div class="project-features">
+                        <h4>Ключевые возможности:</h4>
+                        <ul>
+                            <li>✓ Real-time синхронизация плейлистов</li>
+                            <li>✓ Рекомендательная система с ML</li>
+                            <li>✓ Высокая оптимизация по скорости</li>
+                            <li>✓ Поддержка 1M+ активных пользователей</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-result">
+                        <h4>Результаты клиента:</h4>
+                        <p>📈 Увеличение DAU на 350%</p>
+                        <p>⭐ Рейтинг 4.8/5 в AppStore</p>
+                        <p>💰 Рост выручки на 420%</p>
+                        <p class="client-quote">"Превосходная работа! Проект превзошел все ожидания. Команда профессиональна и отзывчива." - CEO MusicHub</p>
+                    </div>
+                </div>
+
+                <!-- ПРОЕКТ 2: TELEGRAM БОТ -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🤖</div>
+                        <h3>TeleOrder - Telegram E-commerce Bot</h3>
+                    </div>
+
+                    <p class="project-description">
+                        Создал интеллектуального Telegram-бота для автоматизации продаж и обслуживания клиентов с интеграцией платежных систем.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech">Python</span>
+                        <span class="tech">aiogram</span>
+                        <span class="tech">PostgreSQL</span>
+                        <span class="tech">Stripe API</span>
+                    </div>
+
+                    <div class="project-features">
+                        <h4>Ключевые возможности:</h4>
+                        <ul>
+                            <li>✓ Полная интеграция платежных систем</li>
+                            <li>✓ AI-чатбот для ответов на вопросы</li>
+                            <li>✓ Управление заказами в реальном времени</li>
+                            <li>✓ Аналитика и отчетность</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-result">
+                        <h4>Результаты клиента:</h4>
+                        <p>📱 50K+ пользователей за 3 месяца</p>
+                        <p>💵 Автоматизация 80% операций</p>
+                        <p>📊 ROI 600% в первый год</p>
+                        <p class="client-quote">"Бот полностью изменил нашу работу! Продажи выросли в 5 раз." - Владелец TeleOrder</p>
+                    </div>
+                </div>
+
+                <!-- ПРОЕКТ 3: SAAS ПЛАТФОРМА -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">📊</div>
+                        <h3>AnalyticsPro - SaaS платформа аналитики</h3>
+                    </div>
+
+                    <p class="project-description">
+                        Разработал облачную платформу для аналитики и визуализации данных с поддержкой мультитенантности и масштабируемостью.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech">Vue.js</span>
+                        <span class="tech">Django</span>
+                        <span class="tech">PostgreSQL</span>
+                        <span class="tech">Redis</span>
+                    </div>
+
+                    <div class="project-features">
+                        <h4>Ключевые возможности:</h4>
+                        <ul>
+                            <li>✓ Интерактивные дашборды и отчеты</li>
+                            <li>✓ Real-time обработка больших данных</li>
+                            <li>✓ Интеграция с 20+ источниками данных</li>
+                            <li>✓ Автоматизация и планирование отчетов</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-result">
+                        <h4>Результаты клиента:</h4>
+                        <p>🏢 200+ компаний-клиентов</p>
+                        <p>💼 Enterprise контракты на $2М+</p>
+                        <p>⚡ 99.99% uptime гарантия</p>
+                        <p class="client-quote">"Лучшее решение для аналитики! Точно рекомендую." - CTO GlobalCorp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ НАВЫКОВ -->
+    <section class="skills-premium" id="skills">
+        <div class="container">
+            <h2 class="section-title">Технологический стек</h2>
+
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3>Фронтенд</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Бэкенд</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">REST API</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Базы данных</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Боты и API</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Telegram Bot API</span>
+                        <span class="skill-tag">aiogram</span>
+                        <span class="skill-tag">Webhooks</span>
+                        <span class="skill-tag">OAuth 2.0</span>
+                        <span class="skill-tag">GraphQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="contact-premium" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Давайте создадим что-то невероятное</h2>
+                <p class="contact-subtitle">Готов обсудить ваш проект и воплотить его в жизнь</p>
+
+                <div class="contact-buttons">
+                    <a href="https://www.instagram.com/mannapov_ulugbek/" target="_blank" class="btn btn-primary btn-xl">
+                        <span>Написать в Instagram</span>
+                        <span class="btn-arrow">→</span>
+                    </a>
+                    <a href="https://t.me/VVebstyle" target="_blank" class="btn btn-secondary btn-xl">
+                        <span>Написать в Telegram</span>
+                        <span class="btn-icon">💬</span>
+                    </a>
+                </div>
+
+                <div class="contact-info">
+                    <p>📸 Instagram: @mannapov_ulugbek</p>
+                    <p>💬 Telegram: @VVebstyle</p>
+                    <p>📧 Email: mannapovulugbek4@gmail.com</p>
+                </div>
+
+                <div class="contact-methods">
+                    <div class="method-card">
+                        <div class="method-icon">📸</div>
+                        <h4>Instagram</h4>
+                        <p>Напишите мне в Direct Message и расскажите о вашем проекте</p>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-icon">💬</div>
+                        <h4>Telegram</h4>
+                        <p>Быстро и удобно обсудим все детали проекта</p>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="method-icon">📧</div>
+                        <h4>Email</h4>
+                        <p>Отправьте подробное описание вашего проекта</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- БРЕНД -->
+                <div class="footer-brand">
+                    <div class="footer-logo">MU©</div>
+                    <p>Профессиональный программист и разработчик веб-приложений. Создаю цифровые решения для вашего бизнеса.</p>
+                </div>
+
+
+                            <!-- НИЖНЯЯ ЧАСТЬ FOOTER -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-bottom-left">
+                        <p class="footer-bottom-text">TC© 2024 <strong>Маннапов Улугбек</strong>. Все права защищены.</p>
+                        <p class="footer-bottom-text">Made with ❤️ in Uzbekistan</p>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+
+        <div class="footer-decoration"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

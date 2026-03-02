@@ -1,0 +1,249 @@
+/* ========== ДОПОЛНИТЕЛЬНЫЕ АНИМАЦИИ ========== */
+
+/* Анимация для navbar при скролле */
+.navbar.scrolled {
+    box-shadow:
+        0 0 40px rgba(0, 217, 255, 0.5),
+        0 0 70px rgba(0, 217, 255, 0.2),
+        inset 0 0 20px rgba(0, 217, 255, 0.1);
+}
+
+/* Анимация ссылок навигации */
+.nav-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+    pointer-events: none;
+}
+
+.nav-link:hover::after {
+    left: 100%;
+}
+
+/* Анимация проектных карточек */
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 217, 255, 0.2) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+}
+
+.project-card:hover::after {
+    opacity: 1;
+}
+
+/* Мерцание для неоновых элементов */
+@keyframes neonFlicker {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(0, 217, 255, 0.8), 0 0 30px rgba(0, 217, 255, 0.6);
+    }
+}
+
+.nav-contact:hover {
+    animation: neonFlicker 0.5s ease-in-out;
+}
+
+/* Волна анимация для элементов */
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+}
+
+.skill-tag:hover {
+    animation: wave 0.6s ease-in-out;
+}
+
+/* Радужный градиент анимация */
+@keyframes rainbowGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.btn-primary {
+    background-size: 200% 200%;
+    animation: rainbowGradient 3s ease infinite;
+}
+
+/* Стробоскоп эффект для важных элементов */
+@keyframes strobe {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.stat-value {
+    animation: strobe 2s ease-in-out infinite;
+}
+
+/* Поворот анимация */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.social-link:hover {
+    animation: spin 0.6s ease-in-out;
+}
+
+/* Растяжение анимация */
+@keyframes stretch {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(1.05); }
+}
+
+.about-card:hover {
+    animation: stretch 0.6s ease-in-out;
+}
+
+/* Свечение анимация для технологий */
+@keyframes glowTech {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(74, 158, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(74, 158, 255, 0.6);
+    }
+}
+
+.tech:hover {
+    animation: glowTech 0.8s ease-in-out;
+}
+
+/* Отскок анимация */
+@keyframes bounce-smooth {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.btn:hover {
+    animation: bounce-smooth 0.6s ease-in-out;
+}
+
+/* Мигание для загрузчика */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.loader-text {
+    animation: blink 1s ease-in-out infinite;
+}
+
+/* Параллакс эффект */
+@keyframes parallax-move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(20px); }
+}
+
+.particles {
+    animation: parallax-move 4s ease-in-out infinite;
+}
+
+/* ========== МОБИЛЬНЫЕ АНИМАЦИИ ========== */
+@media (max-width: 768px) {
+    /* Упрощаем анимации на мобильных */
+    .nav-menu li {
+        animation-duration: 0.2s;
+    }
+
+    .about-card,
+    .project-card,
+    .method-card {
+        animation-duration: 0.5s;
+    }
+
+    /* Уменьшаем delay для быстрого отображения */
+    .about-card:nth-child(2) { animation-delay: 0.05s; }
+    .about-card:nth-child(3) { animation-delay: 0.1s; }
+    .about-card:nth-child(4) { animation-delay: 0.15s; }
+
+    .project-card:nth-child(2) { animation-delay: 0.05s; }
+    .project-card:nth-child(3) { animation-delay: 0.1s; }
+
+    /* Отключаем heavy анимации */
+    .gradient-sphere {
+        filter: blur(60px);
+        opacity: 0.15;
+    }
+
+    .shape {
+        opacity: 0.03;
+    }
+
+    .particles {
+        display: none;
+    }
+
+    /* Быстрые hover анимации */
+    .btn:hover,
+    .social-link:hover,
+    .footer-links a:hover {
+        transition-duration: 0.2s;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Еще больше упрощаем для маленьких экранов */
+    .logo {
+        animation-duration: 2s;
+    }
+
+    .gradient-sphere {
+        filter: blur(50px);
+        opacity: 0.1;
+    }
+
+    /* Отключаем излишние анимации на очень маленьких экранах */
+    .photo-shine {
+        display: none;
+    }
+
+    .shape {
+        display: none;
+    }
+
+    .tech {
+        animation: none;
+    }
+
+    .skill-tag {
+        animation: none;
+    }
+}
